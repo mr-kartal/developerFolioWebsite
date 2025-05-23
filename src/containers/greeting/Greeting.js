@@ -34,22 +34,26 @@ export default function Greeting() {
                     : "greeting-text-p subTitle"
                 }
               >
-                {greeting.subTitle}
+
+                <div style={{ textAlign: "left" }}> {greeting.subTitle} </div>
               </p>
               <div id="resume" className="empty-div"></div>
-              <SocialMedia />
+              {/* <SocialMedia /> */}
+
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                   <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
+                    href={greeting.resumeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="download-link-button"
                   >
-                    <Button text="Download my resume" />
+                    <Button text="View My CV" />
                   </a>
                 )}
               </div>
+
             </div>
           </div>
           <div className="greeting-image-div">

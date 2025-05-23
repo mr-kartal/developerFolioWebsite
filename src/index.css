@@ -1,3 +1,4 @@
+/*
 @font-face {
   font-family: "Agustina Regular";
   font-style: normal;
@@ -26,6 +27,40 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+ Media Query
+@media (max-width: 1380px) {
+  html,
+  body {
+    font-size: rem;
+    line-height: normal;
+  }
+}
+*/
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: local("Roboto Mono"),
+  url("./assets/fonts/RobotoMono-ExtraLight.ttf") format("truetype");
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Mono", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   html,

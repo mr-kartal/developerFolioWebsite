@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import {illustration, skillsSection} from "../../portfolio";
+import {greeting, illustration, skillsSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
@@ -41,7 +41,7 @@ export default function Skills() {
                   : "subTitle skills-text-subtitle"
               }
             >
-              {skillsSection.subTitle}
+              <div style={{ textAlign: "left" }}> {skillsSection.subTitle} </div>
             </p>
             <SoftwareSkill />
             <div>

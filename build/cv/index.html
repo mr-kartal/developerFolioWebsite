@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Çağrı Kartal CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+      body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          font-family: 'Poppins', sans-serif;
+          background: linear-gradient(135deg, #e0f0ff, #f9f9f9);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          color: #222;
+          opacity: 0;
+          animation: fadeIn 1s ease forwards;
+      }
+      h1 {
+          margin-bottom: 40px;
+          font-weight: 600;
+          font-size: 2.6rem;
+          color: #333;
+          text-align: center;
+          padding: 0 10px;
+      }
+      .btn-container {
+          display: flex;
+          gap: 24px;
+          flex-wrap: wrap;
+          justify-content: center;
+          width: 100%;
+          max-width: 480px;
+      }
+      a.button {
+          text-decoration: none;
+          background-color: #4A90E2;
+          color: white;
+          padding: 16px 48px;
+          border-radius: 12px;
+          font-weight: 600;
+          font-size: 1.3rem;
+          box-shadow: 0 4px 12px rgba(74,144,226,0.4);
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          user-select: none;
+          border: 2px solid transparent;
+          transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.25s ease, border-color 0.3s ease;
+          flex: 1 1 140px;
+          text-align: center;
+          min-width: 140px;
+          box-sizing: border-box;
+      }
+      a.button:hover,
+      a.button:focus {
+          background-color: #357ABD;
+          box-shadow: 0 8px 24px rgba(53,122,189,0.8);
+          transform: scale(1.05);
+          border-color: #357ABD;
+          outline: none;
+      }
+      a.button:active {
+          background-color: #2C5D9E;
+          box-shadow: 0 3px 9px rgba(44,93,158,0.8);
+          transform: scale(0.98);
+      }
+
+      /* Referans Mektupları / Cover Letters button style */
+      a.button.references {
+          background-color: #27ae60; /* green */
+          box-shadow: 0 4px 14px rgba(39, 174, 96, 0.6);
+          border-color: #1e8449;
+          font-weight: 700;
+      }
+      a.button.references:hover,
+      a.button.references:focus {
+          background-color: #1e8449;
+          box-shadow: 0 8px 28px rgba(30, 132, 73, 0.8);
+          border-color: #16692c;
+          transform: scale(1.07);
+          outline: none;
+      }
+      a.button.references:active {
+          background-color: #16692c;
+          box-shadow: 0 3px 12px rgba(22, 105, 44, 0.9);
+          transform: scale(0.95);
+      }
+
+      /* Distinct homepage button style */
+      a.button.homepage {
+          background-color: #E67E22; /* warm orange */
+          box-shadow: 0 4px 14px rgba(230, 126, 34, 0.6);
+          border-color: #D35400;
+          font-weight: 700;
+      }
+      a.button.homepage:hover,
+      a.button.homepage:focus {
+          background-color: #D35400;
+          box-shadow: 0 8px 28px rgba(211, 84, 0, 0.8);
+          border-color: #B03A00;
+          transform: scale(1.07);
+          outline: none;
+      }
+      a.button.homepage:active {
+          background-color: #A04000;
+          box-shadow: 0 3px 12px rgba(160, 64, 0, 0.9);
+          transform: scale(0.95);
+      }
+
+      @keyframes fadeIn {
+          to { opacity: 1; }
+      }
+
+      @media (max-width: 480px) {
+          .btn-container {
+              flex-direction: column;
+              gap: 16px;
+              max-width: 320px;
+          }
+          a.button {
+              flex: none;
+              width: 100%;
+              padding: 14px 0;
+              font-size: 1.2rem;
+              border-radius: 10px;
+          }
+      }
+  </style>
+</head>
+<body>
+<h1>Özgeçmişim / My CV</h1>
+<div class="btn-container">
+  <a href="/cv/cv_tr.pdf" target="_blank" class="button" aria-label="Türkçe CV">Türkçe CV</a>
+  <a href="/cv/cv_en.pdf" target="_blank" class="button" aria-label="English CV">English CV</a>
+  <a href="/cv/reference_letters.pdf" target="_blank" class="button references" aria-label="Referans Mektupları / Cover Letters">Referans Mektupları / Cover Letters</a>
+  <a href="https://cagrikartal.dev" target="_blank" class="button homepage" aria-label="Homepage">Ana Sayfa / Homepage</a>
+</div>
+</body>
+</html>

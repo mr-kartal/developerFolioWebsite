@@ -1,6 +1,7 @@
 import React, {useState, createRef} from "react";
 import "./ExperienceCard.scss";
 import ColorThief from "colorthief";
+import {greeting} from "../../portfolio";
 
 export default function ExperienceCard({cardInfo, isDark}) {
   const [colorArrays, setColorArrays] = useState([]);
@@ -73,7 +74,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
               : "subTitle experience-text-desc"
           }
         >
-          {cardInfo.desc}
+          <div style={{ textAlign: "left" }}> {cardInfo.desc} </div>
         </p>
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />

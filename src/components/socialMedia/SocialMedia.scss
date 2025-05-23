@@ -67,6 +67,9 @@
 .instagram i {
   background-color: $instagram;
 }
+.number i {
+  background-color: $gitlab;
+}
 
 /* Hover Transition */
 .twitter i:hover,
@@ -78,6 +81,7 @@
 .instagram i:hover,
 .stack-overflow i:hover,
 .kaggle i:hover,
+.number i:hover,
 .medium i:hover {
   background-color: $textColor;
 }

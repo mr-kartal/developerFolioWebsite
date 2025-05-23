@@ -32,12 +32,12 @@
 
 .education-text-school {
   margin: 0;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  text-overflow: clip;
+  overflow: visible;
   white-space: nowrap;
-  height: 27px;
+  height: 22px;
 }
 
 .education-roundedimg {
@@ -93,11 +93,11 @@
   }
   .education-text-subHeader {
     padding-top: 0.5rem;
-    font-size: 16px;
+    font-size: 14px;
   }
   .education-text-school {
-    font-size: 20px;
-    height: 23px;
+    font-size: 18px;
+    height: 30px;
   }
   .education-text-duration {
     font-size: 16px;

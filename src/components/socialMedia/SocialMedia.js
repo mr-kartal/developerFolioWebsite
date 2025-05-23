@@ -1,6 +1,10 @@
 import React from "react";
 import "./SocialMedia.scss";
 import {socialMediaLinks} from "../../portfolio";
+import emoji from "react-easy-emoji";
+import { PiPhoneCallDuotone } from "react-icons/pi";
+
+
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
@@ -124,6 +128,18 @@ export default function socialMedia() {
           rel="noopener noreferrer"
         >
           <i className="fab fa-kaggle"></i>
+          <span></span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.number ? (
+        <a
+          href={`tel:${socialMediaLinks.number}`}
+          className="icon-button number"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className='fas fa-phone-alt'></i>
           <span></span>
         </a>
       ) : null}

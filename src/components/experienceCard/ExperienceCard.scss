@@ -55,7 +55,7 @@
 .experience-div-company {
   position: absolute;
   background: transparent;
-  height: 9rem;
+  height: 7rem;
   top: 0;
   left: 0;
   width: 100%;
@@ -66,7 +66,7 @@
 
 .experience-text-company {
   text-align: center;
-  padding: 1.5rem;
+  padding: 1.3rem;
   margin: 0;
   color: $lightBackground1;
   font-size: 25px;
@@ -74,7 +74,7 @@
   font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  //white-space: nowrap;
 }
 
 .experience-roundedimg {
@@ -104,11 +104,11 @@
   color: $textColorDark !important;
 }
 .experience-text-date {
-  text-align: center;
+  text-align: start;
   color: $textColor;
   font-size: 20px;
   margin: 0px;
-  padding-top: 1rem;
+  padding-top: 1.0rem;
   font-weight: 600;
 }
 
@@ -132,7 +132,7 @@
     font-size: 22px;
   }
   .experience-text-date {
-    font-size: 18px;
+    font-size: 14px;
   }
   .experience-roundedimg {
     width: 6.5rem;
@@ -148,7 +148,7 @@
     font-size: 22px;
   }
   .experience-text-date {
-    font-size: 18px;
+    font-size: 16px;
   }
   .experience-text-desc {
     font-size: 16px;

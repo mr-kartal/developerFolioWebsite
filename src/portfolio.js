@@ -34,10 +34,10 @@ const greeting = {
   username: "ↃK",
   title: "This is ↃK",
   subTitle: emoji(
-     "I'm Çağrı Kartal. I have experience in conducting R&D to design end-to-end systems tailored to specific needs. " +
-    "I have specialized in software development, web design, and mobile app development."
+  "I'm Çağrı Kartal. I have experience in conducting R&D to design end-to-end systems tailored to specific needs. I have specialized in software development, web design, and mobile app development."
+
   ),
-  //resumeLink: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "https://cagrikartal.dev/cv", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -47,11 +47,7 @@ const socialMediaLinks = {
   github: "https://github.com/mr-kartal",
   linkedin: "https://www.linkedin.com/in/cagrikartal/",
   gmail: "krtl.cgri@gmail.com",
-  //gitlab: "https://gitlab.com/saadpasta",
-  //facebook: "https://www.facebook.com/saad.pasta7",
-  //medium: "https://medium.com/@saadpasta",
-  //stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
+  number: "+905063003638",
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
@@ -62,11 +58,11 @@ const skillsSection = {
   title: "What I Do",
   subTitle: "Techs I Use",
   skills: [
-    emoji("▪️ Develop custom software for specific needs both in desktop 💻 and mobile 📱 "),
-    emoji("▪️ Responsive Web Design and Development 🌐"),
-    emoji("▪️ Database Management and Design 📊"),
-    emoji("▪️ Integration of third party services such as Supabase ⚡ and GoogleAuth 🛡️"),
-    emoji("️️▪ Video Game Development 🎮"),
+    emoji("🛠️ Develop custom software for both desktop and mobile" ),
+    emoji("🌐 Responsive Web Design and Development"),
+    emoji("📊 Database Management and Design"),
+    emoji("🛡️ Integration of third party services such as Supabase and GoogleAuth"),
+    emoji("🎮 Video Game Development"),
   ],
 
   softwareSkills: [
@@ -139,13 +135,13 @@ const workExperiences = {
       role: "Computer Scientist",
       company: "Vexnor Teknoloji A.Ş",
       companylogo: require("./assets/images/VEXNOR.jpg"),
-      date: "September 2024 – November 2024",
+      date: "Sept 2024 – November 2024",
       desc: "Designed a custom-built desktop app for scientific calculations in a biotechnology company, ensuring accurate data processing and reporting.",
       descBullets: []
     },
     {
       role: "Web Developer",
-      company: "MCBU Computer Research Administration Center",
+      company: "MCBU Computer Research \n" + "Administration Center",
       companylogo: require("./assets/images/logocbu_kare_800.jpg"),
       date: "July 2022 – August 2022",
       desc: "Managed and structured databases, for an internal university management system."
@@ -334,9 +330,9 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+905063003638",
-  email_address: "krtl.cgri@gmail.com"
+    "Discuss a project or just want to say hi? My Inbox is open for all. Just click the button below.",
+  //number: "+905063003638",
+  //email_address: "krtl.cgri@gmail.com"
 };
 
 // Twitter Section
