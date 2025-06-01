@@ -49,7 +49,7 @@ export default function Greeting() {
                     rel="noopener noreferrer"
                     className="download-link-button"
                   >
-                    <Button text="View My CV" />
+                    <Button text="View My CV and References" />
                   </a>
                 )}
               </div>
